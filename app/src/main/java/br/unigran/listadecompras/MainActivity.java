@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         etPreco = findViewById(R.id.precoProdutoId);
         lvListaProdutos = findViewById(R.id.listaId);
 
-        dadosLista =new ArrayList();
+        dadosLista = new ArrayList();
 
         ArrayAdapter adapter = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, dadosLista);
         lvListaProdutos.setAdapter(adapter);
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     public void salvarProduto(View view){
         Compra compra = new Compra();
         compra.setNomeProduto(etProduto.getText().toString());
-        compra.setNomeProduto(etMarca.getText().toString());
-        compra.setNomeProduto(etPreco.getText().toString());
+        compra.setMarcaProduto(etMarca.getText().toString());
+        compra.setPrecoProduto(etPreco.getText().toString());
         dadosLista.add(compra);
         Toast.makeText(this, "Produto adicionado à lista.", Toast.LENGTH_SHORT).show();
     }

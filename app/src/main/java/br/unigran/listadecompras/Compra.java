@@ -3,7 +3,7 @@ package br.unigran.listadecompras;
 public class Compra {
     private String nomeProduto;
     private String marcaProduto;
-    private String precoProduto;
+    private String precoProduto = "R$ ";
 
     public String getNomeProduto() {return nomeProduto;}
 
@@ -17,5 +17,5 @@ public class Compra {
 
     public void setPrecoProduto(String precoProduto) { this.precoProduto += precoProduto; }
 
-    public String toString() { return nomeProduto+" - "+marcaProduto+" - "+precoProduto; }
+    public String toString() { return (nomeProduto+" - "+marcaProduto+" - "+precoProduto); }
 }

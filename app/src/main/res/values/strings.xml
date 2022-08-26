@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lista de compras</string>
+    <string name="precoString">Preço:</string>
+    <string name="marcaString">Marca:</string>
+    <string name="produtoString">Produto:</string>
+    <string name="adicionarSting">Adicionar</string>
+    <string name="limparListaSting">Limpar</string>
+    <string name="precoHint">Preço:</string>
+    <string name="produtoHint">Produto:</string>
+    <string name="marcaHint">Marca:</string>
+</resources>
